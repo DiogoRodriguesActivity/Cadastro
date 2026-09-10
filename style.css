@@ -31,8 +31,18 @@ li:hover{
     font-size: 50px;
 }
 
+:root{
+    --display: none;
+}
+body.block{
+    --display:block;
+}
+body.close{
+    --display:none;
+}
+
 .modal {
-    display: none;
+    display: var(--display);
     position: fixed;
     z-index: 1;
     left: 0;
